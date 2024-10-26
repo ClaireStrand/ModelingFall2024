@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: BoatDockDetail.ma
-//Last modified: Fri, Oct 25, 2024 10:35:06 PM
+//Name: BoatDockLighting.ma
+//Last modified: Fri, Oct 25, 2024 10:35:34 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -16,7 +16,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "3C9651B1-43F6-FB0E-D532-A5AA37841362";
+fileInfo "UUID" "E193BE56-4DB0-CE24-C2D3-15A3F3A39623";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "8BAC0121-481A-791C-F2F0-4D985DB19ECA";
@@ -100191,7 +100191,7 @@ createNode polyBevel3 -n "polyBevel4";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "96C42DEC-4433-5DF2-1EAB-3C9BE649A38A";
+	rename -uid "C04FB85E-4AFF-0E36-9FE6-758D2A5E0044";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -100802,4 +100802,4 @@ connectAttr "aiAreaLight4.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiAreaLight5.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiAreaLight6.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiAreaLight7.iog" ":defaultLightSet.dsm" -na;
-// End of BoatDockDetail.ma
+// End of BoatDockLighting.ma
