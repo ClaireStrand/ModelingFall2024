@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: PirateCoveDetailing.ma
-//Last modified: Sun, Nov 24, 2024 10:40:25 PM
+//Name: PirateCoveDetailingCont.ma
+//Last modified: Sun, Nov 24, 2024 10:43:08 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,18 +13,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "2E0C8DB1-42EF-30D2-3676-508280A598C0";
+fileInfo "UUID" "93E106F1-481E-6953-83C7-3A87BD8FCC9F";
 createNode transform -s -n "persp";
 	rename -uid "C4B48181-4F94-1FAC-0030-65A506E254BA";
-	setAttr ".t" -type "double3" -53.557241117758565 20.348932999372444 13.453049180256619 ;
-	setAttr ".r" -type "double3" -10.200000000001118 -77.200000000000941 3.5890050210661783e-15 ;
+	setAttr ".t" -type "double3" -87.838193670422669 30.718773270183945 25.061423890411103 ;
+	setAttr ".r" -type "double3" -12.600000000001076 -74.800000000001049 0 ;
 	setAttr ".rpt" -type "double3" 3.328910780461103e-14 1.8549659979230124e-14 -2.9884416545408624e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A872E4A6-4F6E-E952-3F75-D8A9A59858D1";
 	setAttr -k off ".v";
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 53.724151231776496;
+	setAttr ".coi" 91.14913445535305;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -27440,7 +27440,7 @@ createNode groupId -n "groupId159";
 	rename -uid "D76F6BE7-4B61-8355-0BF9-2C90B137379A";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "BD0E5F59-4387-3E86-22E7-548D5A70C9A2";
+	rename -uid "F81C5FF7-4BED-8B18-6968-C2AB7F941EE9";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -27875,4 +27875,4 @@ connectAttr "groupId152.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId153.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId156.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId159.msg" ":initialShadingGroup.gn" -na;
-// End of PirateCoveDetailing.ma
+// End of PirateCoveDetailingCont.ma
